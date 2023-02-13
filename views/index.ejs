@@ -27,9 +27,6 @@
 			.container {
 				height: 100vh;
 			}
-			.intro {
-				height: 10vh;
-			}
 		</style>
 	</head>
 	<body class="teal lighten-5">
@@ -43,14 +40,12 @@
 				<div class="col s12 m6 offset-l3">
 					<div class="card z-depth-3">
 						<div class="card-image">
-							<img src="<%= photo %>" />
+							<img src="<%= photo %>" alt="<%= alt  %>" />
 							<div class="divider"></div>
 						</div>
 						<div class="card-content center">
-							<h5>
-                <%= quote %>
-              </h5>
-                <p class="right author"><em>-<%= author %></em></p>
+							<h5>"<%= quote %>"</h5>
+							<p class="right author"><em> -<%= author %> </em></p>
 						</div>
 						<div class="card-action">
 							<a class="waves-effect waves-light btn-small pulse" href="/">Generate</a>
